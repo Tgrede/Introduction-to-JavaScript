@@ -251,9 +251,10 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(startNumber){
-  // for(i = 0; i < startNumber; i++){
-
-  // }
+  for(let i = startNumber; i > 0; i--){
+    let nextNum = startNumber - 1;
+    return `${startNumber} bottles of soda on the wall, ${startNumber} bottles of soda, take one down pass it around ${nextNum} bottles of soda on the wall`;
+  }
 }
 
 
@@ -273,7 +274,20 @@ Using the grade function below do the following:
 */
   
 function grade(num){
-    
+    if(num>=90 && num <= 100){
+      return "you got an A"
+    }else if(num >= 80 && num <90){
+      return "you got a B"
+    }
+    else if(num >= 70 && num <80){
+      return "you got a C"
+    }
+    else if(num >= 60 && num <70){
+      return "you got a D"
+    }
+    else if(num < 60){
+      return "you got an F"
+    }
   }
 
   
